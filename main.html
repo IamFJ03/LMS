@@ -1,0 +1,182 @@
+<html>
+    <head>
+        <style>
+            html{
+                scroll-behavior: smooth;
+            }
+            body{
+                padding:0;
+                margin:0;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .cover{
+                background-color: rgb(199, 207, 161);
+                height:100%;
+                width:100%;
+                border-bottom: 2px solid black;
+            }
+            #cover2{
+                padding-top:2%;
+                background-color: rgb(199, 207, 161);
+            }
+        .head{
+            height:15%;
+            width:100%;
+            background-color:white
+            
+        }
+        h2:hover{
+            cursor:pointer;
+        }
+        .frame{
+            margin:5% 0 0 23%;
+            height:65%;
+            width:30%;
+            border-radius:5px;
+        }
+        .frame2{
+            
+            height:65%;
+            width:30%;
+            margin:-27% 0 0 63%;
+        }
+        .welcome{
+            font-weight:550;
+            font-size: 5vw;
+        }
+        #navbar{
+            height:70%;
+            width:20%;
+            margin-top:-38%;
+            transform:translate(-100%,0);
+            background-color: rgb(0, 0, 0,0.5);
+            border-radius: 5px;
+        }
+        .visible{
+            margin-left:22%;
+            transition:0.5s;
+        }
+        #about{
+            color:white;
+            height:15%;
+            width:100%;
+            background-color: rgb(210, 225, 238,0);
+            border:0;
+            font-size:2vw;
+            cursor:pointer;
+            text-align: left;
+            border-bottom: 2px solid black;
+        }
+        #about:hover{
+            color:aqua;
+
+            padding-left:15%;
+            transition:0.5s;
+        }
+        .search{
+            text-decoration:none;
+            color:white;
+            padding:1% 4% 1% 4%;
+            border-radius:2px; 
+            background-color: black;
+            font-size: 1.5vw;
+            margin-left:5%;
+            margin-top:-1%;
+        }
+        .search:hover{
+            cursor:pointer;
+            font-size: 2vw;
+           border-radius:2px; 
+            padding:1.5% 4.5% 1.5% 4.5%;
+            transition:0.5s;
+        }
+        .left{
+               height:11%;
+               width:12%;
+               border:2px solid rgb(138, 128, 128);
+               transform:rotate(45deg);
+               border-top:0;
+               border-right:0;
+               margin-left:-15%;
+               margin-top:-36%;
+               background-color: rgb(161, 200, 234,0);
+            }
+            .left:hover{
+                cursor:pointer;
+                border:2px solid rgb(0, 0, 0);
+                border-top:0;
+                border-right:0;
+                transition:0.5s;
+            }
+            .right{
+                height:8%;
+               width:4%;
+               border:2px solid rgb(138, 128, 128);
+               transform:rotate(45deg);
+               border-bottom:0;
+               border-left:0;
+               background-color: rgb(161, 200, 234,0);
+               margin-left:88%;
+               margin-top:-25%;
+            }
+            .right:hover{
+                cursor:pointer;
+                border:2px solid rgb(0, 0, 0);
+                border-bottom:0;
+                border-left:0;
+                transition:0.5s;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cover">
+        <div class="head">
+            <h2 style="padding-top:1.5%;margin-left:30%;font-size:3vw;" onclick="nav()">Library Management System</h2>
+        </div>
+
+        <div class="frame">
+           <p class="welcome">Welcome To LMS</p>
+           <p style="font-size:2.5vw;margin-top:-10%">The most efficient Library Management System for your help.</p>
+            <a href="search.php" class="search">Search</a>
+            <p style="color:rgb(97, 88, 88);font-size:1.5vw;">...Search for the details of the book you want</p>
+        </div>
+        
+        <div id="navbar">
+            <h2 style="height:15%;width:100%;font-size:2.8vw;padding-top:10%;padding-left:30%;">LMS</h2>
+            <div style="width:100%;height:0.7%;background-color: black;margin-top:-15%"></div>
+            <a href="option.html"><button id="about">Options</button>
+            <a href="#cover2"><button id="about" onclick="scroll()">About</button>
+            </a>
+            </div>
+            <div class="frame2">
+                <img class="mySlides" style="width:85%" src="1.webp">
+                <img class="mySlides" style="width:85%" src="2.jpg">
+                <img class="mySlides"  style="width:85%"src="3.png">
+                <img class="mySlides" style="width:85%" src="4.jpg">
+                <button class="left" onclick="left()"></button>
+            </div>
+                <button class="right" onclick="right()"></button>
+        </div>
+        <div id="cover2">
+            <h1 style="font-size:4vw;width:85%;margin-left:10%">What is the purpose of Library Management System?</h1>
+
+            <img style="width:40%;margin-left:30%" src="4.png">
+
+            <p style="font-size:2vw;margin-left:10%">The purpose of a library management system is to operate a library with efficiency and at reduced costs. The system being entirely automated streamlines all the tasks involved in operations of the library. The activities of book purchasing, cataloging, indexing, circulation recording and stock checking are done by the software. Such software eliminates the need for repetitive manual work and minimizes the chances of errors.
+
+            <p style="font-size:2vw;margin-left:10%">  The library management system software helps in reducing operational costs. Managing a library manually is labor intensive and an immense amount of paperwork is involved. An automated system reduces the need for manpower and stationery. This leads to lower operational costs.
+                
+            <p style="font-size:2vw;margin-left:10%">The system saves time for both the user and the librarian. With just a click the user can search for the books available in the library. The librarian can answer queries with ease regarding the availability of books. Adding, removing or editing the database is a simple process. Adding new members or cancelling existing memberships can be done with ease.
+                
+            <p style="font-size:2vw;margin-left:10%">Stock checking and verification of books in the library can be done within a few hours. The automated system saves a considerable amount of time as opposed to the manual system.
+                
+            <p style="font-size:2vw;margin-left:10%">The library management system software makes the library a smart one by organizing the books systematically by author, title and subject. This enables users to search for books quickly and effortlessly.
+                
+             <p style="font-size:2vw;margin-left:10%">Students need access to authentic information. An advanced organized library is an integral part of any educational institution. In this digital age a web based library management system would be ideal for students who can access the library’s database on their smartphones.
+            </p>
+        </div>
+        <script src="main.js">
+           
+        </script>
+    </body>
+</html>
